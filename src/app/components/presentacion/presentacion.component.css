@@ -1,0 +1,38 @@
+.divPresentation{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(90deg, rgb(0, 105, 255), rgb(0, 255, 105));
+    background-clip: text;
+    color: transparent;
+    font-size: 7vw;
+    font-family: 'Orbitron', sans-serif;
+    opacity: 0;
+    animation: 5s welcome linear;
+}
+.svgWelcome{
+    stroke: #00cdff;
+    stroke-width: 3;
+    fill: none;
+    stroke-dasharray: 100%;
+    animation: 5s lineas linear;
+    opacity: 0;
+}
+@keyframes lineas{
+    0%{stroke-dashoffset: 100%; opacity: 1;}
+    60%{stroke-dashoffset: 0%;}
+    100%{stroke-dashoffset: 100%; opacity: 1;}
+}
+@keyframes welcome{
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    70%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
