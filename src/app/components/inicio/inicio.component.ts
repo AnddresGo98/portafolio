@@ -16,8 +16,7 @@ export class InicioComponent implements OnInit {
   UrlImg = environment.UrlImg;
   entradaAnimacion = false;
 
-  constructor() {
-   }
+  constructor() {document.documentElement.scrollTop = 0;}
 
   ngOnInit(): void {
     this.entradaAnimacion = !this.entradaAnimacion;

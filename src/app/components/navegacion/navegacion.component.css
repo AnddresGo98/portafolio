@@ -6,7 +6,8 @@
     fill: url(#lgFill);
     z-index: 10;
     top: 0;
-    animation: 6s mostrarNav;
+    height: 100px;
+    animation: 5s mostrarNav;
 }
 .divNav{
     width: 90%;
@@ -70,7 +71,7 @@ nav a:hover{
 #lineManu3{
     bottom: 0;
 }
-@keyframes mostrarNav {
+@keyframes mostrarNav{
     0%{transform: translateY(-100%);}
     60%{transform: translateY(-100%);}
     100%{transform: translateY(0%);}

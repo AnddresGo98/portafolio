@@ -1,0 +1,27 @@
+footer{
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(0,255,105, 0.3), rgba(0,105,255, 0.3));
+    display: flex;
+    flex-wrap:wrap;
+    color: #00cdff;
+    font-family: 'Iceland', cursive;
+}
+.logosContacto{
+    width: 40%;
+    margin: auto;
+    min-width: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.logosContacto img{
+    width: 36px;
+    margin: 10px 20px;
+    filter: invert(1);
+}
+footer p{
+    margin: auto;
+    width: 40%;
+    min-width: 200px;
+    padding: 20px;
+}

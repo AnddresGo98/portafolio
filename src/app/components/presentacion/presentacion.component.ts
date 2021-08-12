@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class PresentacionComponent implements OnInit {
 
   constructor(private router: Router) {
+    document.documentElement.scrollTop = 0;
     setTimeout(() => {
       this.router.navigate(["inicio"]);  
     }, 5500);

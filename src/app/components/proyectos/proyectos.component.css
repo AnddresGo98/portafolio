@@ -5,7 +5,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-family: 'Iceland', cursive; 
+    font-family: 'Iceland', cursive;
+    min-height: 90vh;
 }
 .articleProyectos{
     position: relative;
