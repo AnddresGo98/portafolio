@@ -12,7 +12,7 @@ export class PresentacionComponent implements OnInit {
     setTimeout(() => {
       this.router.navigate(["inicio"]);  
     }, 5500);
-   }
+  }
 
   ngOnInit(): void {
   }

@@ -1,9 +1,11 @@
 .divInicio{
+    position: relative;
     width: 100vw;
-    height: 100vh;
-    max-width: 1200px;
+    height: 90vh;
+    min-height: 570px;
     font-family: 'Orbitron', sans-serif;
     color: #00cdff;
+    margin-top: 80px;
 }
 .inicioTexto, .inicioFoto{
     width: 100%;
@@ -15,6 +17,7 @@
 .inicioTexto{
     height: 50%;
     stroke-width: 10;
+    max-width: 700px;
 }
 .inicioTexto svg{
     transform: translateX(-100%);
@@ -34,13 +37,13 @@
     stroke-width: 15;
 }
 .circle1{
-    animation:20s rotarCirculo1 linear infinite, 6s entradaCirculo1;
+    animation:20s rotarCirculo1 linear infinite, 4s entradaCirculo1;
 }
 .circle2{
-    animation: 20s rotarCirculo1 linear infinite reverse, 6.25s entradaCirculo2;
+    animation: 20s rotarCirculo1 linear infinite reverse, 4.25s entradaCirculo2;
 }
 .circle3{
-    animation:20s rotarCirculo1 linear infinite, 6.5s entradaCirculo3;
+    animation:20s rotarCirculo1 linear infinite, 4.5s entradaCirculo3;
 }
 .divMiFoto{
     width: 65%;
@@ -52,47 +55,27 @@
     object-fit: contain;
     transform: scale(0.001);
 }
-#scroll{
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 2px solid #00cdff;
-    border-right: 2px solid #00cdff;
-    animation: 3s animationScroll 5s linear infinite;
-    opacity: 0;
-}
 @keyframes rotarCirculo1{
     0%{stroke-dashoffset: 0;}
     100%{stroke-dashoffset: 100%;}
 }
 @keyframes entradaCirculo1{
     0%{r:0;}
-    50%{r:0;}
-    90%{r:50%;}
+    60%{r:0;}
+    80%{r:50%;}
     100%{r:36%;}
 }
 @keyframes entradaCirculo2{
     0%{r:0;}
-    50%{r:0;}
-    90%{r:50%;}
+    60%{r:0;}
+    80%{r:50%;}
     100%{r:42%;}
 }
 @keyframes entradaCirculo3{
     0%{r:0;}
-    50%{r:0;}
-    90%{r:50%;}
+    60%{r:0;}
+    80%{r:50%;}
     100%{r:48%;}
-}
-@keyframes animationScroll{
-    0%{padding: 0 1%;opacity: 1;}
-    24.9%{padding: 0 1%;}
-    25%{padding: 0 10%;}
-    49.9%{padding: 0 10%;}
-    50%{padding: 0 20%;}
-    74.9%{padding: 0 20%;}
-    75%{padding: 0 30%;}
-    100%{padding: 0 30%;}
 }
 @media screen and (min-width:700px) {
     .inicioTexto, .inicioFoto{

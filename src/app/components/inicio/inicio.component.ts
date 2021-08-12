@@ -16,12 +16,10 @@ export class InicioComponent implements OnInit {
   UrlImg = environment.UrlImg;
   entradaAnimacion = false;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
-    this.entradaAnimacion = !this.entradaAnimacion;
-  }
-  cambiar(){
     this.entradaAnimacion = !this.entradaAnimacion;
   }
 

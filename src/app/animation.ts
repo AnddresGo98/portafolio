@@ -8,7 +8,7 @@ export const entradaLeftRightSvg = trigger('entradaSvg', [
         transform: "translateX(-100%)"
     })),
     transition('* <=> *', [
-        animate('0.8s')
+        animate('0.5s')
     ])
 ]);
 export const entradaLeftRightTexto = trigger('entradaTexto', [
@@ -19,7 +19,7 @@ export const entradaLeftRightTexto = trigger('entradaTexto', [
         opacity: 0
     })),
     transition('* <=> *', [
-        animate('1s 1.2s')
+        animate('1s 1s')
     ])
 ]);
 export const entradaAumento = trigger('entradaAumento', [
@@ -30,7 +30,7 @@ export const entradaAumento = trigger('entradaAumento', [
         transform: "scale(0)",
     })),
     transition('* => open', [
-        animate('1s 3s', keyframes([
+        animate('1s 2s', keyframes([
             style({transform: "scale(0)"}),
             style({transform: "scale(1)"}),
             style({transform: "scale(0.9)"})

@@ -1,0 +1,93 @@
+.navegacion{
+    position: fixed;
+    width: 100%;
+    stroke: url(#lgLeft_Right);
+    stroke-width: 10;
+    fill: url(#lgFill);
+    z-index: 10;
+    top: 0;
+    animation: 6s mostrarNav;
+}
+.divNav{
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -89vh);
+    background: rgba(0, 0, 0, 0.97);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 70%;
+    transform: translate(-50%,-50%);
+}
+nav a{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 30px 0;
+    font-family: 'Orbitron', sans-serif;
+    color: #00cdff;
+    transition: 0.4s all;
+}
+nav a:hover{
+    background: #00ccff36;
+    color: #ffffff;
+}
+.divLogoMenu{
+    position: absolute;
+    width: 90%;
+    height: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logoMenu{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+}
+.logoMenu:hover div{
+    background: #5affe4;
+}
+.logoMenu div{
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background: #00cdff;
+}
+#lineManu3{
+    bottom: 0;
+}
+@keyframes mostrarNav {
+    0%{transform: translateY(-100%);}
+    60%{transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
+}
+@media screen and (min-width:800px) {
+    .divLogoMenu{
+        display: none;
+    }
+    nav{
+        top: 90%;
+        transform: translate(-50%, 0);
+        height: auto;
+        z-index: 11;
+    }
+    nav a {
+        width: auto;
+        padding: 15px 7px;
+        font-size: 1.2em;
+    }
+}

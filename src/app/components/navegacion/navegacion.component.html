@@ -1,0 +1,24 @@
+<div class="navegacion" >
+    <div class="divNav" [@navMobile]="estadoMenu ? 'open': 'closed'">
+        <nav>
+            <a [routerLink]="'inicio'"> Inicio</a>
+            <a [routerLink]="'proyectos'">Proyectos</a>
+            <a [routerLink]="'skills'">Habilidades</a>
+            <a [routerLink]="'about'">Acerca de Mi</a>
+        </nav>
+        <svg width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path d="M10 0 L10 900 L50 950 L100 950 L200 990 L800 990 L900 950 L950 950 L990 900 L990 0"/>
+        </svg>
+    </div>
+    <div class="divLogoMenu">
+        <svg width="100%" height="100%" viewBox="0 0 1000 200" preserveAspectRatio="none">
+            <path d="M10 0 L50 100 L100 100 L200 190 L800 190 L900 100 L950 100 L990 0"/>
+        </svg>
+        <div class="logoMenu" (click)="cambiarEstadoMenu()">
+            <div id="lineManu1" [@menu1]="estadoMenu ? 'open': 'closed'"></div>
+            <div id="lineManu2"  [@menu2]="estadoMenu ? 'open': 'closed'"></div>
+            <div id="lineManu3"></div>
+        </div>
+    </div>
+</div>
+

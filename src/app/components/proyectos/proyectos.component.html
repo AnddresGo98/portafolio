@@ -1,0 +1,13 @@
+<section id="proyectos">
+    <article class="articleProyectos" *ngFor="let element of datosProyectos">
+        <img src="{{element.img}}">
+        <h5>{{element.nombre}}</h5>
+        <svg width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path class="pathProyectos" [attr.d]="pathPoyecto" />
+        </svg>
+        <div class="enlaceProyectos">
+            <a href="{{element.urlGitHub}}" target="_bank"><img src="{{UrlImg}}icon/gitHub_ico.ico"></a>   
+            <a href="{{element.urlPagina}}" target="_bank"><img src="{{UrlImg}}icon/pagina_ico.ico"></a>    
+        </div>
+    </article>
+</section>
