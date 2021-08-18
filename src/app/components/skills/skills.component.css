@@ -6,8 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    stroke: url(#lgLeft_Right);
-    fill: none;
     min-height: 90vh;
 }
 .habilidad{
@@ -19,7 +17,6 @@
     width: 100px;
     position: relative;
     float: left;
-    stroke-width: 7;
 }
 .logoHabilidad circle{
     animation: rotarCirculo 15s linear infinite;
@@ -40,10 +37,8 @@
     height: 100px;
     float: left;
     position: relative;
-    stroke-width: 4;
 }
 .textoHabilidad h6{
-    color:#00cdff;
     position: absolute;
     top: 45%;
     left: 10%;

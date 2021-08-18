@@ -1,14 +1,14 @@
 <section id="habilidades">
     <article class="habilidad" *ngFor="let e of datosHabilidades">
         <div class="logoHabilidad">
-            <svg width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="none">
+            <svg viewBox="0 0 200 200" preserveAspectRatio="none">
                 <circle cx="100" cy="100" r="80" stroke-dasharray="21%"/>
                 <circle cx="100" cy="100" r="95" stroke-dasharray="21.1%"/>
             </svg>
             <img src="{{e.logo}}">
         </div>
         <div class="textoHabilidad">
-            <svg width="100%" height="100%" viewBox="0 0 1000 200" preserveAspectRatio="none">
+            <svg viewBox="0 0 1000 200" preserveAspectRatio="none">
                 <path d="M10 10 300 10 350 50 600 50 650 100 900 100 990 150 990 190 60 190 Z"/> 
             </svg>
             <h6>{{e.titulo}}</h6>

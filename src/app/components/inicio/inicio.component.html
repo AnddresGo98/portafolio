@@ -1,9 +1,9 @@
 <div class="divInicio">
     <div class="inicioTexto">
-        <svg width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none" [@entradaSvg]="entradaAnimacion ? 'open' : 'closed'">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" @LeftRightSvg>
             <path d="M0 50 L200 50 L300 100 L450 100 L550 150 L900 150 L950 200 L950 800 L900 850 L550 850 L450 900 L300 900 L200 950 L0 950"/>
         </svg>
-        <div class="texto" [@entradaTexto]="entradaAnimacion ? 'open' : 'closed'">
+        <div class="texto" @LeftRightTexto>
             <p>Yo soy</p>
             <h1>ANDRÉS GONZÁLEZ</h1>
             <p>Desarrollador Front End</p>
@@ -11,12 +11,12 @@
     </div>
     <div class="inicioFoto">
         <div class="divMiFoto">
-            <img id="miFoto" src="{{UrlImg}}img/miFoto.png" title="¿Soy guapo?" [@entradaAumento]="entradaAnimacion ? 'open' : 'closed'">
+            <img id="miFoto" src="{{UrlImg}}img/miFoto.png" title="¿Soy guapo?" @aumentoImg>
         </div>
-        <svg width="100%" height="100%" viewBox="0 0 1000 1000">
-            <circle class="circle1" cy="500" cx="500" r="360" stroke-dasharray="16.2%" />
-            <circle class="circle2" cy="500" cx="500" r="420" stroke-dasharray="18.9%"/>
-            <circle class="circle3" cy="500" cx="500" r="480" stroke-dasharray="25.1%"/>
+        <svg viewBox="0 0 1000 1000">
+            <circle class="circle1" cy="500" cx="500" r="360" stroke-dasharray="16.2%" @svgCircle1/>
+            <circle class="circle2" cy="500" cx="500" r="420" stroke-dasharray="18.9%" @svgCircle2/>
+            <circle class="circle3" cy="500" cx="500" r="480" stroke-dasharray="25.1%" @svgCircle3/>
         </svg>
     </div>
 </div>

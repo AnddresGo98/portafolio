@@ -5,14 +5,10 @@
     margin-top: 120px;
     margin-bottom: 50px;
     font-family: 'Iceland', cursive;
-    color: #00cdff;
 }
 .tituloAbout{
     width: 100%;
     height: 80px;
-    stroke: url(#lgLeft_Right);
-    stroke-width: 7;
-    fill: none;
     position: relative;
     margin-bottom:40px;
 }

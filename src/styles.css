@@ -9,8 +9,21 @@
 }
 html{
     background: black;
+    color: #00cdff;
+    overflow-x: hidden;
 }
 .lg{
     position: absolute;
-    top:0
+    top:0;
+    height: 0;
+}
+svg{
+    stroke: url(#lgLeft_Right);
+    fill:url(#lgFill);
+    stroke-width: 7;
+    width: 100%;
+    height: 100%;
+}
+circle{
+    fill:none;
 }

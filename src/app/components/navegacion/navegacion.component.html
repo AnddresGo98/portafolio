@@ -6,13 +6,13 @@
             <a [routerLink]="'skills'">Habilidades</a>
             <a [routerLink]="'about'">Acerca de Mí</a>
         </nav>
-        <svg width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path d="M10 0 L10 900 L50 950 L100 950 L200 990 L800 990 L900 950 L950 950 L990 900 L990 0"/>
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path d="M10 0 10 900 40 950 80 950 150 990 850 990 920 950 960 950 990 900 990 0"/>
         </svg>
     </div>
     <div class="divLogoMenu">
-        <svg width="100%" height="100%" viewBox="0 0 1000 200" preserveAspectRatio="none">
-            <path d="M10 0 L50 100 L100 100 L200 190 L800 190 L900 100 L950 100 L990 0"/>
+        <svg viewBox="0 0 1000 200" preserveAspectRatio="none">
+            <path d="M10 0 40 100 80 100 150 190 850 190 920 100 950 100 990 0"/>
         </svg>
         <div class="logoMenu" (click)="cambiarEstadoMenu()">
             <div id="lineManu1" [@menu1]="estadoMenu ? 'open': 'closed'"></div>

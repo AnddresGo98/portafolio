@@ -56,18 +56,18 @@ import { Router } from '@angular/router';
   ]
 })
 export class NavegacionComponent implements OnInit {
+
   estadoMenu = false;
+
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
       (this.estadoMenu = false);
     })
    }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
 
-  }
   cambiarEstadoMenu() {
     this.estadoMenu = !this.estadoMenu;
   }
-
 }

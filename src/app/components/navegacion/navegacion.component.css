@@ -1,9 +1,6 @@
 .navegacion{
     position: fixed;
     width: 100%;
-    stroke: url(#lgLeft_Right);
-    stroke-width: 10;
-    fill: url(#lgFill);
     z-index: 10;
     top: 0;
     height: 100px;
@@ -36,8 +33,8 @@ nav a{
     text-decoration: none;
     padding: 30px 0;
     font-family: 'Orbitron', sans-serif;
-    color: #00cdff;
     transition: 0.4s all;
+    color: #00cdff;
 }
 nav a:hover{
     background: #00ccff36;
@@ -71,11 +68,11 @@ nav a:hover{
 #lineManu3{
     bottom: 0;
 }
-@keyframes mostrarNav{
+/* @keyframes mostrarNav{
     0%{transform: translateY(-100%);}
     60%{transform: translateY(-100%);}
     100%{transform: translateY(0%);}
-}
+} */
 @media screen and (min-width:800px) {
     .divLogoMenu{
         display: none;

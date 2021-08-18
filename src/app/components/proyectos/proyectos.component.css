@@ -25,9 +25,6 @@
 }
 .articleProyectos path{
     transition: 1s d;
-    stroke: url(#lgLeft_Right);
-    stroke-width: 20;
-    fill: url(#lgFill);
 }
 .articleProyectos >img{
     width: 90%;
@@ -35,7 +32,6 @@
     margin: auto;
 }
 .articleProyectos h5{
-    color: white;
     font-size: 2em;
     animation: 3s aparecer linear;
     margin: auto;
@@ -60,9 +56,6 @@
 .articleProyectos:hover img{
     opacity: 1;
     transition: 2s opacity;
-}
-.articleProyectos:hover path{
-    fill: rgba(0, 0, 0, 0.9);
 }
 .enlaceProyectos img:hover{
     filter: invert(0.5);

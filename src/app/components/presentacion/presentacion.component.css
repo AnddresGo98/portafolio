@@ -18,11 +18,10 @@
 }
 .svgWelcome{
     stroke: #00cdff;
-    stroke-width: 3;
-    fill: none;
     stroke-dasharray: 100%;
     animation: 5s lineas linear;
     opacity: 0;
+    fill: none;
 }
 @keyframes lineas{
     0%{stroke-dashoffset: 100%; opacity: 1;}

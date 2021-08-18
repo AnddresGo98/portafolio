@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +7,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portafolio';
   activarNav = false;
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
       this.router.url == "/presentacion" ? (this.activarNav = false) : (this.activarNav = true);
     })
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 
 }
